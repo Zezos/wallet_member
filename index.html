@@ -32,6 +32,7 @@
     <link rel="stylesheet" type="text/css" href="css/core.css" />
     <link rel="stylesheet" type="text/css" href="css/op.css" />
     <link href="https://fonts.googleapis.com/css?family=Varela+Round|Prompt:wght@200;400;800&family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <!-- Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="bootstrap-4.0.0/js/bootstrap.min.js"></script>
@@ -140,37 +141,90 @@
 
                     </section>
                     <!-- GAMEPLAY -->
+                    <button class="m1-btn-copy p-2"><i class="fas fa-arrow-up"></i> โยกเงินทั้งหมดไปที่กระเป๋าหลัก 2,000 <i class="fas fa-arrow-up"></i></button>
                     <section class="mb-3">
                         <div>
                             <div class="row" style="display: flex; flex-wrap: wrap; justify-content: center;">
-                                <div class="box-list">
-                                    <div class="box-black">
-                                        <div style="height:150px;background-image:url(images/game/igoal.png);background-size: 100%;"></div>
-                                        <span class="fs-4">เครดิตคงเหลือ</span><br>{{ game_credit[0] }}<br>
-                                        <button class="badge bg-danger">เข้าเล่น</button>
+                                <div class="pagebox page-c2">
+                                    <div class="box-black p-1">
+                                        <img class="img-fluid" src="images/game/igoal.png">
+                                        <span class="fs-4 tx-btn">เครดิตคงเหลือ</span><br>{{ game_credit[0] }}<br>
+                                        <div class="row no-gutters">
+                                            <div class="col-12 p-1">
+                                                <button class="btn-sm btn-block bg-info"><i class="far fa-play-circle"></i> เข้าเล่น</button>
+                                            </div>
+                                        </div>
+
+                                        <div class="row no-gutters">
+                                            <div class="col-md-6 p-1">
+                                                <button class="btn-sm btn-block btn-success">โยกเงินเข้า</button>
+                                            </div>
+                                            <div class="col-md-6 p-1">
+                                                <button class="btn-sm btn-block btn-danger">โยกเงินออก</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box-black p-1">
+                                        <img class="img-fluid" src="images/game/bf.png">
+                                        <span class="fs-4 tx-btn">เครดิตคงเหลือ</span><br>{{ game_credit[1] }}<br>
+                                        <div class="row no-gutters">
+                                            <div class="col-12 p-1">
+                                                <button class="btn-sm btn-block bg-info"><i class="far fa-play-circle"></i> เข้าเล่น</button>
+                                            </div>
+                                        </div>
+
+                                        <div class="row no-gutters">
+                                            <div class="col-md-6 p-1">
+                                                <button class="btn-sm btn-block btn-success">โยกเงินเข้า</button>
+                                            </div>
+                                            <div class="col-md-6 p-1">
+                                                <button class="btn-sm btn-block btn-danger">โยกเงินออก</button>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="box-list">
-                                    <div class="box-black">
-                                        <div style="height:150px;background-image:url(images/game/bf.png);background-size: 100%;"></div>
-                                        <span class="fs-4">เครดิตคงเหลือ</span><br>{{ game_credit[1] }}<br>
-                                        <button class="badge bg-danger">เข้าเล่น</button>
+                                <div class="pagebox page-c2">
+                                    <div class="box-black p-1">
+                                        <img class="img-fluid" src="images/game/ufabet.png">
+                                        <span class="fs-4 tx-btn">เครดิตคงเหลือ</span><br>{{ game_credit[1] }}<br>
+                                        <div class="row no-gutters">
+                                            <div class="col-12 p-1">
+                                                <button class="btn-sm btn-block bg-info"><i class="far fa-play-circle"></i> เข้าเล่น</button>
+                                            </div>
+                                        </div>
+
+                                        <div class="row no-gutters">
+                                            <div class="col-md-6 p-1">
+                                                <button class="btn-sm btn-block btn-success">โยกเงินเข้า</button>
+                                            </div>
+                                            <div class="col-md-6 p-1">
+                                                <button class="btn-sm btn-block btn-danger">โยกเงินออก</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box-black p-1">
+                                        <img class="img-fluid" src="images/game/aec.png">
+                                        <span class="fs-4 tx-btn">เครดิตคงเหลือ</span><br>{{ game_credit[2] }}<br>
+
+                                        <div class="row no-gutters">
+                                            <div class="col-12 p-1">
+                                                <button class="btn-sm btn-block bg-info"><i class="far fa-play-circle"></i> เข้าเล่น</button>
+                                            </div>
+                                        </div>
+
+                                        <div class="row no-gutters">
+                                            <div class="col-md-6 p-1">
+                                                <button class="btn-sm btn-block btn-success">โยกเงินเข้า</button>
+                                            </div>
+                                            <div class="col-md-6 p-1">
+                                                <button class="btn-sm btn-block btn-danger">โยกเงินออก</button>
+                                            </div>
+                                        </div>
+
                                     </div>
                                 </div>
-                                <div class="box-list">
-                                    <div class="box-black">
-                                        <div style="height:150px;background-image:url(images/game/ufabet.png);background-size: 100%;"></div>
-                                        <span class="fs-4">เครดิตคงเหลือ</span><br>{{ game_credit[2] }}<br>
-                                        <button class="badge bg-danger">เข้าเล่น</button>
-                                    </div>
-                                </div>
-                                <div class="box-list">
-                                    <div class="box-black">
-                                        <div style="height:150px;background-image:url(images/game/aec.png);background-size: 100%;"></div>
-                                        <span class="fs-4">เครดิตคงเหลือ</span><br>{{ game_credit[3] }}<br>
-                                        <button class="badge bg-danger">เข้าเล่น</button>
-                                    </div>
-                                </div>
+
+
                             </div>
                         </div>
 
