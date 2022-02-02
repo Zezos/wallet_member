@@ -1,0 +1,430 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- SEO TAG -->
+    <title>Member</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="">
+    <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    <!-- OG : TAG -->
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/core.css" />
+    <link rel="stylesheet" type="text/css" href="css/op.css" />
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round|Prompt:wght@200;400;800&family=Varela+Round&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="bootstrap-4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="bootstrap-4.0.0/css/bootstrap.min.css">
+</head>
+<!-- Body -->
+
+<body class="bg-system">
+
+    <header>
+        <!-- Side menu -->
+        <input type="checkbox" name="toggle" id="toggle" title="menu" />
+        <label for="toggle"></label>
+        <div class="message">
+            <div class="quick-menu-box">
+                <a href="index.html" class="quick-menu" title="back to homepage">
+                    <img src="images/logo-main.png" width="100%" alt="" title="">
+                </a>
+                <ul>
+                    <a href="index.html" class="quick-menu" title="กลับหน้าแรก">หน้าแรก</a>
+                    <a href="promotion.html" class="quick-menu" title="โปรโมชั่น">โปรโมชั่น</a>
+                    <a href="profile.html" class="quick-menu" title="แก้ไขข้อมูล">แก้ไขข้อมูล</a>
+                    <a href="https://lin.ee/4uiivGH9Y" target="_blank" class="quick-menu" title="ติดต่อพูดคุย">ติดต่อพูดคุย</a>
+            </div>
+        </div>
+        <script>
+            window.onscroll = function() {
+                var nav = document.getElementById('topbar');
+                if (window.pageYOffset > 60) {
+                    nav.classList.add("topbar-bg");
+                } else {
+                    nav.classList.remove("topbar-bg");
+                }
+            }
+        </script>
+
+        <div class="fix-top" id="topbar">
+            <div class="head-left">
+                <a href="member.html" class="m-top-logo"><img src="images/logo-main.png" width="100%" alt=""></a>
+            </div>
+            <div class="head-right">
+                <button class="btn-top" onclick="location.href='login.html';"><img src="images/login.png" alt="">LOGOUT</button>
+            </div>
+        </div>
+        <div id="pop-02" class="modal fade ">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <button type="button" class="close playbutton" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+                    <div class="modal-body">
+                        <div class="post-news">
+                            <img src="images/pop-02.jpg" width="100%" alt="" title="">
+                        </div>
+                        <button type="button" class="btn-site playbutton" data-dismiss="modal">close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="app">
+
+        <main class="money-section bg-top">
+
+
+            <div class="m-page-in">
+
+                <div class="money-frame">
+                    <!-- section 1 -->
+                    <section class="money-sec1">
+                        <div class="m1-box">
+                            <div class="m1-user">
+                                <div class="m1-user-cov">
+                                    <img src="images/user.png" width="100%" alt="" title="">
+                                </div>
+                                <div class="user-info">
+                                    <div class="m1-user-id">
+                                        BF110257802010
+                                    </div>
+                                    <div class="m1-user-name">
+                                        คุณสมพง ใจอยากมี
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="m1-cradit">
+                                <div class="m1-cradit-01">
+                                    <span class="tx-m">กระเป๋าหลัก</span>
+                                    <span class="tx-credit">{{ credit }}</span>
+                                </div>
+                                <div class="m1-cradit-02">
+                                    <span class="tx-m">รายได้</span>
+                                    <span class="tx-credit">0.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="m1-bk">
+                            <span class="m1-topic text-white">บัญชีสำหรับโอน</span>
+                            <span class="tx-ct3">ธนาคารกสิกรไทย / ชื่อ สมพง  ใจอยากมี</span>
+                            <div class="m-bookbank">
+                                <div class="m1-bk-ico"><img src="images/bank/kbank.png" width="100%" alt="" title=""></div>
+                                <div class="m1-bk-num">222-1-88752-7</div>
+                                <button class="m1-btn-copy">COPY</button>
+                            </div>
+                        </div>
+
+                    </section>
+                    <!-- GAMEPLAY -->
+                    <section class="mb-3">
+                        <div>
+                            <div class="row" style="display: flex; flex-wrap: wrap; justify-content: center;">
+                                <div class="box-list">
+                                    <div class="box-black">
+                                        <div style="height:150px;background-image:url(images/game/igoal.png);background-size: 100%;"></div>
+                                        <span class="fs-4">เครดิตคงเหลือ</span><br>{{ game_credit[0] }}<br>
+                                        <button class="badge bg-danger">เข้าเล่น</button>
+                                    </div>
+                                </div>
+                                <div class="box-list">
+                                    <div class="box-black">
+                                        <div style="height:150px;background-image:url(images/game/bf.png);background-size: 100%;"></div>
+                                        <span class="fs-4">เครดิตคงเหลือ</span><br>{{ game_credit[1] }}<br>
+                                        <button class="badge bg-danger">เข้าเล่น</button>
+                                    </div>
+                                </div>
+                                <div class="box-list">
+                                    <div class="box-black">
+                                        <div style="height:150px;background-image:url(images/game/ufabet.png);background-size: 100%;"></div>
+                                        <span class="fs-4">เครดิตคงเหลือ</span><br>{{ game_credit[2] }}<br>
+                                        <button class="badge bg-danger">เข้าเล่น</button>
+                                    </div>
+                                </div>
+                                <div class="box-list">
+                                    <div class="box-black">
+                                        <div style="height:150px;background-image:url(images/game/aec.png);background-size: 100%;"></div>
+                                        <span class="fs-4">เครดิตคงเหลือ</span><br>{{ game_credit[3] }}<br>
+                                        <button class="badge bg-danger">เข้าเล่น</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+                    <!-- section 2 -->
+                    <section class="money-sec2">
+
+                        <div class="m2-box">
+                            <div class="m2-topic"><span><div class="m2-topic-in">ช่องทาง ฝาก - ถอน</div></span></div>
+                            <ul class="nav nav-pills m2-menu" role="tablist">
+                                <li class="m2-menu-list">
+                                    <button class="m2-btn" id="btn-open1" data-toggle="modal" data-target="#pop-02"><img src="images/menu/menu-01.png" width="100%" alt="" title=""></button>
+                                    <span class="m2-btn-tx">ฝากอัตโนมัติ</span>
+                                </li>
+                                <li class="m2-menu-list">
+                                    <a class="m2-btn nav-link-mem" data-toggle="pill" href="#m-menu2"><img src="images/menu/menu-02.png" width="100%" alt="" title=""></a>
+                                    <span class="m2-btn-tx">ฝากเงิน</span>
+                                </li>
+                                <li class="m2-menu-list">
+                                    <a class="m2-btn nav-link-mem" data-toggle="pill" href="#m-menu3" v-on:click="move(2)"><img src="images/menu/menu-03.png" width="100%" alt="" title=""></a>
+                                    <span class="m2-btn-tx">ถอนเงิน</span>
+                                </li>
+                                <li class="m2-menu-list">
+                                    <a class="m2-btn nav-link-mem" data-toggle="pill" href="#m-menu4"><img src="images/menu/menu-04.png" width="100%" alt="" title=""></a>
+                                    <span class="m2-btn-tx">ลิงค์รับรายได้</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section class="sec-tab-ct">
+
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div id="tab-money" class="container tab-pane active">
+                                <div class="container" id="tab-box">
+                                    <!-- Tab panes -->
+                                    <div class="tab-content">
+                                        <div id="m-menu1" class="tab-rows tab-pane">
+                                            <img src="images/pop-02.jpg" width="100%" alt="">
+                                        </div>
+                                        <div id="m-menu2" class="tab-rows tab-pane fade">
+                                            <p class="tx-note">กรุณากรอกข้อมูลสำหรับแจ้งโอนเงินของท่าน</p>
+                                            <form class="money-form" name="topup-money">
+                                                <div class="row-form">
+                                                    <label class="money-label" for="bank-tran">โอนเข้าบัญชี :</label>
+                                                    <select class="input-03" id="bank-tran" name="banktran" required>
+							<option class="input-04" value="bktran-00" disabled="disabled" selected="selected">กรุณาเลือกบัญชี</option>
+							<option class="input-04" value="bktran-01">นายxxxxxxxxx-01</option>
+							<option class="input-04" value="bktran-02">นายxxxxxxxxx-02</option>
+						</select>
+                                                </div>
+                                                <div class="row-form">
+                                                    <label class="money-label" for="money-tran">จำนวนเงิน :</label>
+                                                    <input class="input-03" placeholder="ขั้นต่ำ 100 บาท" name="money-tran" type="text" maxlength="8" required>
+                                                </div>
+                                                <div class="row-form">
+                                                    <label class="money-label" for="money-date">วันและเวลา :</label>
+                                                    <input class="input-03" placeholder="" name="money-date" type="date" value="2020-04-08" required>
+                                                    <div class="input-half">
+                                                        <select name="Time_Hour" class="input-03" required>
+<option value="00"selected="selected">00</option><option value="01">01</option><option value="02">02</option><option value="03">03</option><option value="04">04</option><option value="05">05</option><option value="06">06</option><option value="07">07</option><option value="08">08</option><option value="09">09</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option>
+						</select>
+                                                        <select name="Time_Minute" class="input-03" required>
+<option value="00"selected="selected">00</option><option value="01">01</option><option value="02">02</option><option value="03">03</option><option value="04">04</option><option value="05">05</option><option value="06">06</option><option value="07">07</option><option value="08">08</option><option value="09">09</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option><option value="32">32</option><option value="33">33</option><option value="34">34</option><option value="35">35</option><option value="36">36</option><option value="37">37</option><option value="38">38</option><option value="39">39</option><option value="40">40</option><option value="41">41</option><option value="42">42</option><option value="43">43</option><option value="44">44</option><option value="45">45</option><option value="46">46</option><option value="47">47</option><option value="48">48</option><option value="49">49</option><option value="50">50</option><option value="51">51</option><option value="52">52</option><option value="53">53</option><option value="54">54</option><option value="55">55</option><option value="56">56</option><option value="57">57</option><option value="58">58</option><option value="59">59</option>
+						</select>
+                                                    </div>
+                                                </div>
+                                                <div class="row-form">
+                                                    <label class="money-label" for="ch-tran">ช่องทางการโอน :</label>
+                                                    <select class="input-03" id="ch-tran" name="banktran" required>
+							<option class="input-04" value="chtran-00" disabled="disabled" selected="selected">รูปแบบการโอนเงิน</option>
+							<option class="input-04" value="chtran-01">โอนผ่าน ช่องทาง ATM</option>
+							<option class="input-04" value="chtran-02">โอนผ่าน Application บนมือถือ</option>
+							<option class="input-04" value="chtran-03">โอนผ่าน Internet Banking</option>
+						</select>
+                                                </div>
+                                                <div class="row-reg">
+                                                    <button class="btn-login2" id="topup-money" type="submit">ยืนยัน</button>
+                                                </div>
+                                            </form>
+                                            <div class="money-notebox">
+                                                <p class="tx-money">- ฝากเงินขั้นต่ำ 100 บาท</p>
+                                                <p class="tx-money">- บริษัทไม่รับเงินที่ไม่สามารถหาข้อมูลผู้โอนเงินได้</p>
+                                                <p class="tx-money">- รับเงินเฉพาะบัญชีที่สมัครไว้เท่านั้น หากใช้บัญชีอื่นโอน บริษัทขอโอนเงินคืนทุกกรณี (รอ 3วันทำการ)</p>
+                                                <p class="tx-money">- โปรดติดต่อพนักงานก่อนโอนเงินหากท่านมีข้อสงสัย</p>
+                                            </div>
+                                        </div>
+                                        <div id="m-menu3" class="tab-rows tab-pane fade">
+                                            <span class="m1-topic">บัญชีรับเงิน</span>
+                                            <div class="withdraw-bk">
+                                                <div class="w-bk-left">
+                                                    <img src="images/bank/kbank.png" width="100%" alt="" title="">
+                                                </div>
+                                                <div class="w-bk-right">
+                                                    <div class="m1-user-id">
+                                                        ธนาคารกสิกรไทย</br>
+                                                        คุณโตมอญ รักษาสิทธิ์</br>
+                                                        021-7-21101-7</br>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <form class="money-form" name="withdraw-money">
+                                                <div v-if="nomoney">
+                                                    <div class="row-form">
+                                                        <p>ยอดเงินไม่เพียงพอ</p>
+                                                    </div>
+                                                    <div class="row-reg">
+                                                        <button class="btn-login2" type="button" v-on:click="addmoney" data-toggle="modal" data-target="#modalpopup">ย้ายเงินเข้ากระเป๋าหลัก</button>
+                                                    </div>
+                                                </div>
+                                                <div v-if="! nomoney">
+                                                    <div class="row-form">
+                                                        <span class="tx-ct2 tx-center">ยอดเงินที่ถอนได้</span>
+                                                        <input class="input-03 text-center" placeholder="" value="2000" name="money-tran" type="number" min="100" step="any" required>
+                                                    </div>
+                                                    <div class="row-reg">
+                                                        <button class="btn-login2" id="withdraw-money" type="submit">ยืนยันการถอน</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+
+                                        <div id="m-menu4" class="tab-rows tab-pane fade">
+                                            <div class="rw rwc-f gap10">
+                                                <span class="tx-ct3">ถอนเงินรายได้</span>
+                                                <span class="tx-ct">Coming soon..</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End intab money -->
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </section>
+                    <div class="m2-box2">
+                        <div class="m2-topic"><span><div class="m2-topic-in">เมนู</div></span></div>
+                        <ul class="nav nav-pills m2-menu2" role="tablist">
+                            <li class="m2-menu-list">
+                                <button class="m2-btn" onclick="location.href='member.html';"><img src="images/menu/menu-05.png" width="100%" alt="" title=""></button>
+                                <span class="m2-btn-tx">หน้าแรก</span>
+                            </li>
+
+                            <li class="m2-menu-list">
+                                <a class="m2-btn" href="promotion.html"><img src="images/menu/menu-06.png" width="100%" alt="" title=""></a>
+                                <span class="m2-btn-tx">โปรโมชั่น</span>
+                            </li>
+                            <li class="m2-menu-list">
+                                <a class="m2-btn" href="profile.html"><img src="images/menu/menu-09.png" width="100%" alt="" title=""></a>
+                                <span class="m2-btn-tx">แก้ไขข้อมูล</span>
+                            </li>
+                            <li class="m2-menu-list">
+                                <button class="m2-btn" onclick="window.open('line@dermpun')"><img src="images/menu/menu-10.png" width="100%" alt="" title=""></button>
+                                <span class="m2-btn-tx">ติดต่อพูดคุย</span>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+
+                <footer>
+                    <div class="ft-box bg-ft">
+
+                        <p class="ft-cc">Copyright © 2021 AEC-TH All Rights Reserved.</p>
+
+
+                    </div>
+                </footer>
+            </div>
+        </main>
+        <!-- Modal -->
+        <div id="modalpopup" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <button type="button" class="close playbutton" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+                    <div class="modal-body p-3 rounded">
+                        <div class="post-news text-white">
+                            กรุณารอสักครู่ระบบกำลังย้ายเงิน
+                        </div>
+                        <button type="button" class="btn-site playbutton" data-dismiss="modal">close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/#app-->
+        <!-- EXCLUSIVE SCRIPT -->
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+        <script>
+            var app = new Vue({
+                el: '#app',
+                data: {
+                    message: 'Hello Vue!',
+                    credit: 0,
+                    game_credit: [2000, 0, 0, 0],
+                    nomoney: true,
+                },
+                mounted() {
+                    //this.scrollToElement();
+                },
+                watch: {
+                    // whenever question changes, this function will run
+                    credit: function(n, o) {
+                        if (n == 0) {
+                            this.nomoney = true;
+                        } else {
+                            this.nomoney = false;
+                        }
+                    }
+                },
+                methods: {
+                    addmoney: function() {
+                        var self = this;
+                        setTimeout(function(scope) {
+                            self.credit = self.game_credit[0];
+                            self.game_credit[0] = 0;
+                            $('#modalpopup').modal('hide')
+                        }, 2000);
+
+                    },
+                    move: function(num) {
+                        if (num == 2) {
+                            //	//this.$nextTick(function(){
+                            //		this.$refs.money-form.focus();
+                            //	});
+                            this.scrollToElement('bg-ft');
+                        }
+                    },
+                    scrollToElement(element) {
+                        const el = this.$refs.element;
+
+                        if (el) {
+                            // Use el.scrollIntoView() to instantly scroll to the element
+                            el.scrollIntoView({
+                                behavior: 'smooth'
+                            });
+                        }
+                    }
+                }
+            })
+        </script>
+        <!--/EXCLUSIVE SCRIPT-->
+        <script>
+            $(".nav-link-mem").click(function() {
+                var tabs_offset = $(".money-sec2").offset();
+                scrollTo(tabs_offset.left, tabs_offset.top);
+            });
+        </script>
+</body>
+
+</html>
