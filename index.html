@@ -171,9 +171,24 @@
                                     </div>
                                     <div class="row mx-auto no-gutters p-3">
                                         <div class="col-12">
-                                            <input class="form-control" type="text" placeholder="จำนวนเครดิต">
+                                            <input id="credit" class="form-control" type="text" placeholder="จำนวนเครดิต">
                                         </div>
                                     </div>
+                                    <div class="row m-0 p-1">
+                                        <div class="col-3 p-1">
+                                            <button type="button" class="btn btn-sm btn-block btn-light" onclick="buttonClick100();">100</button>
+                                        </div>
+                                        <div class="col-3 p-1">
+                                            <button type="button" class="btn btn-sm btn-block btn-light" onclick="buttonClick500();">500</button>
+                                        </div>
+                                        <div class="col-3 p-1">
+                                            <button type="button" class="btn btn-sm btn-block btn-light" onclick="buttonClick1000();">1000</button>
+                                        </div>
+                                        <div class="col-3 p-1">
+                                            <button type="button" class="btn btn-sm btn-block btn-light" onclick="buttonClickAll();">All</button>
+                                        </div>
+                                    </div>
+
                                     <div class="row mx-auto text-center">
                                         <div class="col-12 m-0 p-0">
                                             <button type="button" class="btn btn-block btn-success">โยกเงินเข้า</button>
@@ -215,7 +230,21 @@
                                     </div>
                                     <div class="row mx-auto no-gutters p-3">
                                         <div class="col-12">
-                                            <input class="form-control" type="text" placeholder="จำนวนเครดิต">
+                                            <input id="credit" class="form-control" type="text" placeholder="จำนวนเครดิต">
+                                        </div>
+                                    </div>
+                                    <div class="row m-0 p-1">
+                                        <div class="col-3 p-1">
+                                            <button type="button" class="btn btn-sm btn-block btn-light" onclick="buttonClick100();">100</button>
+                                        </div>
+                                        <div class="col-3 p-1">
+                                            <button type="button" class="btn btn-sm btn-block btn-light" onclick="buttonClick500();">500</button>
+                                        </div>
+                                        <div class="col-3 p-1">
+                                            <button type="button" class="btn btn-sm btn-block btn-light" onclick="buttonClick1000();">1000</button>
+                                        </div>
+                                        <div class="col-3 p-1">
+                                            <button type="button" class="btn btn-sm btn-block btn-light" onclick="buttonClickAll();">All</button>
                                         </div>
                                     </div>
                                     <div class="row mx-auto text-center">
@@ -594,6 +623,25 @@
             </div>
         </div>
         <!--/#app-->
+
+        <script>
+            function buttonClick100() {
+                document.getElementById('credit').value = 100;
+            }
+
+            function buttonClick500() {
+                document.getElementById('credit').value = 500;
+            }
+
+            function buttonClick1000() {
+                document.getElementById('credit').value = 1000;
+            }
+
+            function buttonClickAll() {
+                document.getElementById('credit').value = 1000;
+            }
+        </script>
+
         <!-- EXCLUSIVE SCRIPT -->
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
