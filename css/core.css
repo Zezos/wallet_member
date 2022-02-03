@@ -1093,6 +1093,11 @@ ol li:before {
     background: linear-gradient(180deg, rgba(236, 21, 21, 1) 0%, rgba(164, 19, 15, 1) 62%);
 }
 
+.btn-cplay {
+    background: rgb(0, 170, 210);
+    background: linear-gradient(0deg, rgba(0, 170, 210, 1) 0%, rgba(0, 146, 255, 1) 62%);
+}
+
 
 /* test */
 
