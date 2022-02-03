@@ -1004,20 +1004,60 @@ ol li:before {
     font-family: 'Prompt', sans-serif !important;
 }
 
-.logo-igoal {
-    height: 100%;
-    background-image: url('../images/game/igoal.png');
-    background-repeat: no-repeat;
-    background-size: 100%;
+.tag {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    color: #4a4a4a;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    font-size: .75rem;
+    height: 2em;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    line-height: 1.5;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    white-space: nowrap;
+    margin-bottom: 0.5rem;
 }
 
-.flexbox {
+.ml-2,
+.mx-2 {
+    margin-left: 0.5rem!important;
+}
+
+.addons-right {
+    margin-left: 0;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.addons-left {
+    margin-right: 0;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.is-dark {
+    background-color: #363636;
+    color: #f5f5f5;
+}
+
+.is-blue {
+    background-color: #2287fa;
+    color: #272626;
+}
+
+.is-half {
+    -webkit-box-flex: 0;
+    -ms-flex: none;
+    flex: none;
     width: 100%;
-    padding: 0;
-    position: relative;
-    display: -ms-flex;
-    display: -webkit-flex;
-    display: flex;
 }
 
 
