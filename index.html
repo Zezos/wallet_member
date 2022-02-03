@@ -140,6 +140,28 @@
                         </div>
 
                     </section>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="credit_in" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    test
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">ok</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- GAMEPLAY -->
                     <button class="m1-btn-copy p-2"><i class="fas fa-arrow-up"></i> โยกเงินทั้งหมดไปที่กระเป๋าหลัก 2,000 <i class="fas fa-arrow-up"></i></button>
                     <section class="mb-3">
@@ -157,7 +179,7 @@
 
                                         <div class="row no-gutters">
                                             <div class="col-6 p-1">
-                                                <button class="btn-sm btn-block btn-success">โยกเงิน เข้า</button>
+                                                <button class="btn-sm btn-block btn-success" data-toggle="modal" data-target="#credit_in">โยกเงิน เข้า</button>
                                             </div>
                                             <div class="col-6 p-1">
                                                 <button class="btn-sm btn-block btn-danger">โยกเงิน ออก</button>
@@ -208,7 +230,7 @@
 
                                         <div class="row no-gutters">
                                             <div class="col-12 p-1">
-                                                <button class="btn-sm btn-block bg-info"><i class="far fa-play-circle"></i> เข้าเล่น</button>
+                                                <button class="btn-sm btn-block bg-info"><i class="far fa-play-circle"></i> Coming Soon..</button>
                                             </div>
                                         </div>
 
@@ -425,7 +447,7 @@
                 data: {
                     message: 'Hello Vue!',
                     credit: 0,
-                    game_credit: [2000, 0, 0, 0],
+                    game_credit: ["2,000", 0, 0, 0],
                     nomoney: true,
                 },
                 mounted() {
