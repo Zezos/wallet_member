@@ -1073,13 +1073,13 @@ ol li:before {
 
 .btn-click {
     border: solid 1px rgba(11, 11, 11, 1) !important;
-    background-color: rgba(112, 112, 112, 0.5) !important;
+    background-color: rgba(112, 112, 112, 1.0) !important;
     border-radius: 5% !important;
 }
 
 .btn-clickclose {
     border: solid 1px rgba(11, 11, 11, 1) !important;
-    background-color: rgba(192, 0, 0, 0.5) !important;
+    background-color: rgba(192, 0, 0, 1.0) !important;
     border-radius: 5% !important;
 }
 
